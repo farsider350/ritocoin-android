@@ -1,11 +1,13 @@
-![ƀ](/images/header.png) RVN Wallet for Android
+RITO Wallet for Android
 ----------------------------------
 
-[![Get it on Google Play](/images/icon-google-play.png)](https://play.google.com/store/apps/details?id=org.ritocoin.aw)
+### THIS WALLET IS STILL IN DEVELOPMENT AND NOT READY FOR USE
 
-### a completely standalone Ravencoin wallet
+This code is on github so that others may collaborate with me on its development. Feel free to download the code and try it out, but be aware that it has not yet been fully tested. There are certainly numerous issues that still need to be resolved in this codebase before we can release it to the public.
 
-Unlike many other wallets, This wallet is a real standalone Ravencoin client. There is no server to get hacked or go down, so you can always access your money. Using [SPV](https://en.bitcoin.it/wiki/Thin_Client_Security#Header-Only_Clients) mode, This wallet connects directly to the Ravencoin network with the fast performance you need on a mobile device.
+### a completely standalone Ritocoin wallet
+
+Unlike many other wallets, This wallet is a real standalone Ritocoin client. There is no server to get hacked or go down, so you can always access your money. Using [SPV](https://en.bitcoin.it/wiki/Thin_Client_Security#Header-Only_Clients) mode, This wallet connects directly to the Ritocoin network with the fast performance you need on a mobile device.
 
 ### the next step in wallet security
 
@@ -13,7 +15,7 @@ This wallet is designed to protect you from malware, browser security holes. Wit
 
 ### beautiful simplicity
 
-Simplicity is RVN's wallet core design principle. A simple backup phrase is all you need to restore your wallet on another device if yours is ever lost or broken.  Because it is  [deterministic](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki), your balance and transaction history can be recovered from just your backup phrase.
+Simplicity is RITO's wallet core design principle. A simple backup phrase is all you need to restore your wallet on another device if yours is ever lost or broken.  Because it is  [deterministic](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki), your balance and transaction history can be recovered from just your backup phrase.
 
 ## features
 
