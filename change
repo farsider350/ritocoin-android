@@ -1,0 +1,36 @@
+
+file names: org.ritocoin.aw change to org/ritocoin/aw
+
+sed -i 's/com\/ritocoin.org\/ritocoin\/aw/g' `grep -rl "com\/ravencoin" .`
+
+find . -name \*org.ritocoin.aw\* -exec rename 's/org.ritocoin.aw/org_ritocoin_aw/' {} ";"
+
+sed -i 's/org.ritocoin.aw_core/org_ritocoin_aw_core/g' `grep -rl "org.ritocoin.aw_core" .`
+
+sed -i 's/org.ritocoin.aw/org.ritocoin.aw/g' `grep -rl "com\.ravencoin" .`
+
+sed -i 's/ravencoin.com/ritocoin.org/g' `grep -rl "ravencoin.com" .`
+
+sed -i 's/RvnWallet/RitoWallet/g' `grep -rl "RvnWallet" .`
+find . -name \*RvnWallet\* -exec rename 's/RvnWallet/RitoWallet/' {} ";"
+
+sed -i 's/RvnTransaction/RitoTransaction/g' `grep -rl "RvnTransaction" .`
+find . -name \*RvnTransaction\* -exec rename 's/RvnTransaction/RitoTransaction/' {} ";"
+
+sed -i 's/RvnNode/RitoNode/g' `grep -rl "RvnNode" .`
+
+sed -i 's/RVN/RITO/g' `grep -rl "RVN" .`
+sed -i 's/RAVEN/RITO/g' `grep -rl "RAVEN" .`
+sed -i 's/Raven/Rito/g' `grep -rl "Raven" .`
+sed -i 's/rvn/rito/g' `grep -rl "rvn" .`
+
+
+
+
+
+
+
+
+
+find . -name \*raven\* -exec rename 's/raven/rito/' {} ";"
+
