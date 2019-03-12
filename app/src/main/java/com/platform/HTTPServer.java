@@ -70,7 +70,7 @@ public class HTTPServer {
     public static final String URL_EA = "http://localhost:" + PORT + "/ea";
     public static final String URL_BUY = "http://localhost:" + PORT + "/buy";
 //    public static final String URL_SUPPORT = "http://localhost:" + PORT + "/support";
-    public static final String URL_SUPPORT = "http://ritowallet.org/support";
+    public static final String URL_SUPPORT = "http://ritocoin.org/";
     public static ServerMode mode;
 
     public enum ServerMode {
