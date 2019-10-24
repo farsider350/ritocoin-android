@@ -70,8 +70,8 @@ static const struct {
     uint32_t timestamp;
     uint32_t target;
 } checkpoint_array[] = {
-        {   751332, "aad0f46dcf8231a0b1ff317dc580448029960fc1b441a663fb40b", 15, 0x },
-        {   751336, "905d2889276c77395f726fe84e200fa0b6fb972d54eb5bb42ad71", 15, 0x }
+        {   751332, "aad0f46dcf8231a0b1ff317dc580448029960fc1b441a663fb40b", 1571887653, 0x1b1ac6a6 },
+        {   751336, "905d2889276c77395f726fe84e200fa0b6fb972d54eb5bb42ad71", 1571887931, 0x1b1bf38b }
 };
 
 static const char *dns_seeds[] = {
