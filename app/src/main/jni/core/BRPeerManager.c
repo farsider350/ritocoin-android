@@ -70,12 +70,12 @@ static const struct {
     uint32_t timestamp;
     uint32_t target;
 } checkpoint_array[] = {
-        {      0, "00000075e344bdf1c0e433f453764b1830a7aa19b2a5213e707502a22b779c1b", 1543578342, 0x1e00ffff },
-        {   13205, "00000000002d64255013feb75a702864edc57ca4a7dd307dc3c5c41f817f40a4", 1544304635, 0x1b2f6c70 }
+        {   751332, "aad0f46dcf8231a0b1ff317dc580448029960fc1b441a663fb40b", 15, 0x },
+        {   751336, "905d2889276c77395f726fe84e200fa0b6fb972d54eb5bb42ad71", 15, 0x }
 };
 
 static const char *dns_seeds[] = {
-        "s1.ritocoin.org.", "s2.ritocoin.org.", "s3.ritocoin.org."
+        "seed.pigeoncoin.org.", "seed2.pigeoncoin.org.", "seed3.pigeoncoin.org."
 };
 
 #endif

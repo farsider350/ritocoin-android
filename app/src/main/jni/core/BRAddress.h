@@ -39,8 +39,8 @@ extern "C" {
 #endif
 
 // bitcoin address prefixes
-#define BITCOIN_PUBKEY_ADDRESS      25
-#define BITCOIN_SCRIPT_ADDRESS      105
+#define BITCOIN_PUBKEY_ADDRESS      55
+#define BITCOIN_SCRIPT_ADDRESS      122
 #define BITCOIN_PUBKEY_ADDRESS_TEST 139
 #define BITCOIN_SCRIPT_ADDRESS_TEST 196
 

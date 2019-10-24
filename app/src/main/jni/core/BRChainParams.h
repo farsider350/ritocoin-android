@@ -48,13 +48,13 @@ typedef struct {
 
 
 static const char *BRMainNetDNSSeeds[] = {
-    "s1.ritocoin.org.", "s2.ritocoin.org.", "s3.ritocoin.org.", 
+    "seed.pigeoncoin.org.", "seed2.pigeoncoin.org.", "seed3.pigeoncoin.org.", 
     /*"seed.breadwallet.com.", "seed.bitcoin.sipa.be.", "dnsseed.bluematt.me.", "dnsseed.bitcoin.dashjr.org.",
     "seed.bitcoinstats.com.", "bitseed.xf2.org.", "seed.bitcoin.jonasschnelli.ch.",*/ NULL
 };
 
 static const char *BRTestNetDNSSeeds[] = {
-    "tn.s1.ritocoin.org.", "tn.s2.ritocoin.org.", "tn.s3.ritocoin.org.", 
+    ".org.", ".org.", ".org.", 
     /*"testnet-seed.breadwallet.com.", "testnet-seed.bitcoin.petertodd.org.", "testnet-seed.bluematt.me.",
     "testnet-seed.bitcoin.schildbach.de.",*/ NULL
 };
@@ -62,8 +62,8 @@ static const char *BRTestNetDNSSeeds[] = {
 // blockchain checkpoints - these are also used as starting points for partial chain downloads, so they must be at
 // difficulty transition boundaries in order to verify the block difficulty at the immediately following transition
 static const BRCheckPoint BRMainNetCheckpoints[] = {
-    {      0, u256_hex_decode("00000075e344bdf1c0e433f453764b1830a7aa19b2a5213e707502a22b779c1b"), 1543578342, 0x1e00ffff },  //Ritoized
-    { 13205, u256_hex_decode("00000000002d64255013feb75a702864edc57ca4a7dd307dc3c5c41f817f40a4"), 1544304635, 0x1b2f6c70 }
+    {      751332, u256_hex_decode("aad0f46dcf8231a0b1ff317dc580448029960fc1b441a663fb40b"), 15, 0x },  //Pigeon
+    { 751336, u256_hex_decode("905d2889276c77395f726fe84e200fa0b6fb972d54eb5bb42ad71"), 15, 0x }
 };
 
 static const BRCheckPoint BRTestNetCheckpoints[] = {
@@ -97,8 +97,8 @@ static int BRTestNetVerifyDifficulty(const BRMerkleBlock *block, const BRSet *bl
 
 static const BRChainParams BRMainNetParams = {
     BRMainNetDNSSeeds,
-    7342,       // standardPort
-    0xa1c07b2a, // magicNumber
+    8757,       // standardPort
+    0x4e564152, // magicNumber
     0,          // services
     BRMainNetVerifyDifficulty,
     BRMainNetCheckpoints,

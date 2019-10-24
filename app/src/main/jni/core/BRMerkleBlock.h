@@ -46,7 +46,7 @@ extern "C" {
 #elif REGTEST
 #define DGW_START_BLOCK         0
 #else
-#define DGW_START_BLOCK         180
+#define DGW_START_BLOCK         1
 #endif
 
 typedef struct {
