@@ -1459,7 +1459,7 @@ static const char *BRBIP39WordsEn[BIP39_WORDLIST_COUNT] = {
     "rare",
     "rate",
     "rather",
-    "rito",
+    "pgn",
     "raw",
     "razor",
     "ready",

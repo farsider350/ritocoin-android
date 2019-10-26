@@ -49,19 +49,6 @@
 #define PEER_FLAG_SYNCED      0x01
 #define PEER_FLAG_NEEDSUPDATE 0x02
 
-#if BITCOIN_TESTNET
-
-static const struct { uint32_t height; const char *hash; uint32_t timestamp; uint32_t target; } checkpoint_array[] = {
-    {       0, "00000075e344bdf1c0e433f453764b1830a7aa19b2a5213e707502a22b779c1b", 1543578342, 0x1e00ffff },  //Ritoized
-    {       3500, "000008019f6ea572ce5b9fd9bf406d5bf0bb5109044d4d14275b6b43a77a9e8f", 1544283660, 0x1e0fffff }
-    };
-
-static const char *dns_seeds[] = {
-    "tn.s1.ritocoin.org.", "tn.s2.ritocoin.org."
-};
-
-#else // main net
-
 // blockchain checkpoints - these are also used as starting points for partial chain downloads, so they need to be at
 // difficulty transition boundaries in order to verify the block difficulty at the immediately following transition
 static const struct {
@@ -70,15 +57,38 @@ static const struct {
     uint32_t timestamp;
     uint32_t target;
 } checkpoint_array[] = {
-        {   751332, "aad0f46dcf8231a0b1ff317dc580448029960fc1b441a663fb40b", 1571887653, 0x1b1ac6a6 },
-        {   751336, "905d2889276c77395f726fe84e200fa0b6fb972d54eb5bb42ad71", 1571887931, 0x1b1bf38b }
+
+//    {       0, "000000f049bef9fec0179131874c54c76c0ff59f695db30a4f0da52072c99492", 1521661111, 0x1e00ffff },
+//    {       25420, "000000000015f99026409fc469f23b7f327381241ef46e682850c27e4354fe3d", 1522250411, 0x1b5ecec0 },
+//    {       50420, "0000000000059b106a3bec49488bc6c6e271e56517cf8ff77ccf80595406abfe", 1523928659, 0x1b2b8935 },
+//    {       87570,  "0000000000639a9468641873ceab00c1fbce7e2f895d7bcf6563bf2d02d2d049", 1528605889, 0x1c009163 },
+//    {      111222, "00000000002925cd877a54b28c959e 8ac12c341e238539cf117d8ed2a77fd828", 1533482872, 0x1c01bef6 },
+//    {      166222, "00000000009a33113ed94cb847bf1cafb6f998a7e19cbd5eace85fb2c1baada0", 1536778628, 0x1c00b883 },
+//    {      211222, "000000000077d73073e149b82b3e2422d8db140712a3e7e6296d44931a033d5b", 1539480333, 0x1c00e62b },
+//    {      320000, "00000000005c58a9bc3d746bc91d0a14f81f7adaa229daa7ab5de810a6b404ae", 1546005073, 0x1c00ded5 },
+//    {      420000, "00000000001f7e2a7a26728db0ffec8a3d0690e824200b648519b3ce52ebfeca", 1552004467, 0x1c00d30a },
+//    {      520000, "0000000000302a242a763e9c07821b23ba1cb762a4bb3ce474bdf9ee964859f9", 1558004994, 0x1c0098ef },
+    {      740000, "00000000001da7cc7b451e5b4f23944ed0278ba31f4835adfa7fa782276ace48", 1571207863, 0x1b271eac },
+    {      750000, "00000000001a253ae36bebd689e04301306e7aa1a3bc86cec8119e8ac638ff73", 1571808191, 0x1b20b6ef }
+
 };
 
 static const char *dns_seeds[] = {
-        "seed.pigeoncoin.org.", "seed2.pigeoncoin.org.", "seed3.pigeoncoin.org."
+    "seed.peristeri.xyz",
+    "seed.pigeoncoin.xyz"
+//    "192.99.19.160",
+//    "60.191.146.186",
+//    "78.128.77.167",
+//    "78.40.84.53",
+//    "95.30.239.250",
+//    "58.171.135.242",
+//    "167.114.135.147",
+//    "207.81.246.219",
+//    "94.45.223.47",
+//    "193.70.35.149",
+//    "111.73.46.97",
+//    "178.238.224.253"
 };
-
-#endif
 
 typedef struct {
     BRPeerManager *manager;

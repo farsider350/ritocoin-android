@@ -41,7 +41,7 @@ extern "C" {
 // bitcoin address prefixes
 #define BITCOIN_PUBKEY_ADDRESS      55
 #define BITCOIN_SCRIPT_ADDRESS      122
-#define BITCOIN_PUBKEY_ADDRESS_TEST 139
+#define BITCOIN_PUBKEY_ADDRESS_TEST 111
 #define BITCOIN_SCRIPT_ADDRESS_TEST 196
 
 // bitcoin script opcodes: https://en.bitcoin.it/wiki/Script#Constants

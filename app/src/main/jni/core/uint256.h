@@ -1,11 +1,11 @@
 // Copyright (c) 2011-2018 The Bitcoin Core developers
-// Copyright (c) 2017 The Rito Core developers
-// Copyright (c) 2018 The Rito Core developers
+// Copyright (c) 2017 The Pigeon Core developers
+// Copyright (c) 2018 The Pigeon Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef RITO_UINT256_H
-#define RITO_UINT256_H
+#ifndef PIGEON_UINT256_H
+#define PIGEON_UINT256_H
 
 #include <assert.h>
 #include <cstring>
@@ -176,4 +176,4 @@ public:
         return result;
     }
 };
-#endif // RITO_UINT256_H
+#endif // PIGEON_UINT256_H
